@@ -4,7 +4,7 @@ $(document).ready(() => {
   $searchForm.on('submit', (e) => {
     let word = $searchText.val();
     console.log(word);
-    cipher(word, n);
+    cipher(word, 33);
   });
 });
 
@@ -40,30 +40,30 @@ function cipher(word, n) {
   return cipherWord;
 };
 
-const decipher = (word, n) => {
-  var decipherWord = '',
-    length = capitalLetter.length,
-    n = n % length;
+// const decipher = (word, n) => {
+//   var decipherWord = '',
+//     length = capitalLetter.length,
+//     n = n % length;
 
-  for (let i = 0; i < word.length; i++) {
-    var temp = word.charAt(i),
-      decipherLetter;
+//   for (let i = 0; i < word.length; i++) {
+//     var temp = word.charAt(i),
+//       decipherLetter;
 
-    if (findIndex(capitalLetter, temp) !== -1) {
-      decipherLetter = (findIndex(capitalLetter, temp) - n + length) % length;
+//     if (findIndex(capitalLetter, temp) !== -1) {
+//       decipherLetter = (findIndex(capitalLetter, temp) - n + length) % length;
 
-      decipherWord += capitalLetter[decipherLetter];
-    } else if (findIndex(littleletter, temp) !== -1) {
-      decipherLetter = (findIndex(littleletter, temp) - n + length) % length;
+//       decipherWord += capitalLetter[decipherLetter];
+//     } else if (findIndex(littleletter, temp) !== -1) {
+//       decipherLetter = (findIndex(littleletter, temp) - n + length) % length;
 
-      decipherWord += littleletter[decipherLetter];
-    } else {
-      decipherLetter = temp;
-      decipherWord += decipherLetter;
-    }
-  }
-  return decipherWord;
-};
+//       decipherWord += littleletter[decipherLetter];
+//     } else {
+//       decipherLetter = temp;
+//       decipherWord += decipherLetter;
+//     }
+//   }
+//   return decipherWord;
+// };
 
 var capitalLetter = new Array('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z');
 var littleletter = new Array('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z');
