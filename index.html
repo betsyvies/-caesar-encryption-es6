@@ -6,35 +6,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Caeser Cipher</title>
-  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <!-- Import Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
   <!-- Import Font Awesome -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <!--Import Bootstrap.css-->
   <link type="text/css" rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
-  <!-- <link type="text/css" rel="stylesheet" href="css/main.css"> -->
+  <link type="text/css" rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-  <!-- Container of fondo -->
-  <div class="container-fluid background">
-    <div class="row">
-      <div class="col-xs-12 col-lg-12">
-        <h1>Cipher</h1>
-      </div>
-      <div class="col-xs-12 col-lg-12 container-img">
-        <form id="searchForm">
-          <input id="searchText" class="form-control" type="text" placeholder="Search movie ...">
-        </form>
-      </div>
-      <div class="col-xs-12 col-lg-12 container-img">
-        <p></p>
-        <button type="button" class="btn btn-primary">New message</button>
+  <!-- Title Container -->
+  <header>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-lg-12">
+          <h1 class="title">Caesar Cipher</h1>
+        </div>
       </div>
     </div>
-  </div>
+  </header>
+
+  <section>
+    <!-- Registry Container -->
+    <div class="container-fluid background">
+      <div class="row">
+        <div class="col-xs-12 col-lg-12 container">
+          <div class="col-xs-12 col-lg-12 container-registry">
+            <div class="input-group">
+              <div class="input-group-btn">
+                <button id="button-dropdown" type="button" class="btn btn-default dropdown-toggle button-number" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">
+                  <img id="number-button" src="assets/images/num.jpg" alt="number" />
+                  <span class="caret"></span>
+                </button>
+                <ul id="container-num" class="dropdown-menu flags-dropdown-menu list-num">
+                </ul>
+              </div>
+              <!-- /btn-group -->
+              <input id="input-form" type="text" class="form-control input-control" aria-label="..." value="">
+            </div>
+          </div>
+          <!-- Results Container -->
+          <div class="col-xs-12 col-lg-12 container-img">
+            <p id="sentence-cipher" class="phrase"></p>
+            <button id="button-cipher" type="button" class="btn btn-success">Cipher</button>
+            <button id="button-decipher" type="button" class="btn btn-success">Decipher</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Import jQuery and Bootstrap.js -->
   <script type="text/javascript" src="vendors/js/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="vendors/bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/cipherAndDecipher.js"></script>
   <script type="text/javascript" src="js/app.js"></script>
 </body>
 
