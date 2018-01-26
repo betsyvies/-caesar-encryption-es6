@@ -21,8 +21,8 @@ $(document).ready(() => {
     }
 
     /* Este evento dará el valor del parametro a la variable p de $buttonDropdown */
-    $('#container-num li').on('click', function(e) {  
-      let num = $(this).text();
+    $('#container-num li').on('click', (e) => {  
+      let num = $(e.target).text();
       $('#value').html('');    
       $numberButton.hide();
       $buttonDropdown.prepend(`<p id="value" class="conteiner-value">${num}</p>`);
@@ -30,8 +30,8 @@ $(document).ready(() => {
       /* Este evento recibirá la sentecia y la ejecutará con los botones de cipher y decipher */
       $inputForm
         .focus()
-        .on('keyup', function(e) {
-          let sentence = $(this).val();
+        .on('keyup', (e) => {
+          let sentence = $(e.target).val();
           if (/^\s+|\s+$/.test(sentence) || /^([0-9])*$/.test(sentence)) {
             alert('No puedes dejar espacios vacios, ni escribir numeros');
             $buttonCipher.attr('disabled', true);
