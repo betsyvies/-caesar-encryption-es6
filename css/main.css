@@ -1,30 +1,76 @@
 /* Gobal */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: #fff;
-    font-family: 'Press Start 2P', cursive;
-    text-align: center;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
       
-  /* Styles for splash view */
-    
-  .background {
-    background: linear-gradient(140deg, #173430 , #000, #173430);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-    
-  .container-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-    
-  img {
-    width: 55%;
-  }
+/* Styles for title container */
+
+header {
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-family: 'Lobster', cursive;
+}
+
+/* Styles for registry container */
+
+.background {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  height: 50rem;
+  background-image: url(../assets/images/fondo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+  box-shadow: 0 0 64px -4px rgba(0, 0, 0, .4);
+  max-width: 740px;
+  opacity: 1;
+  padding: 24px;
+  transition: opacity .8s ease-in-out, left 1.2s ease-in-out;
+}
+
+.button-number {
+  padding-right: 2rem; 
+}
+
+[alt="number"] {
+  width: 100%;
+}
+
+.list-num {
+  width: 10rem; 
+  height: 20rem; 
+  overflow: auto;
+} 
+
+.number:hover {
+  background: rgba(27, 27, 27, 0.3);
+}
+
+.input-control {
+  text-align: left;
+}
+
+.conteiner-value {
+  width: 1px;
+  display: inline;
+}
+
+/* Style for results container */
+
+.phrase {
+  height: 30rem;
+  background: rgba(0,0,0,0.6);
+  margin-top: 2rem;
+  color: #fff;
+  padding: 2rem;
+  text-align: left;
+}
