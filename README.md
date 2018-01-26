@@ -50,7 +50,7 @@
 
 - Vista Principal
 
-![Caesar cipher](assets/images/caesar-cipher.png)
+![Caesar-cipher](assets/images/caesar-cipher.png)
 
 
 
