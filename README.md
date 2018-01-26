@@ -6,6 +6,12 @@
 
 ## Flujo de la aplicación
 
+- Empezará haciendo click al boton con imagen ('#'), para seleccionar un parámetro.
+- Luego escribirá la frase a cifrar o decifrar en el input.
+- Hará click en el botón que necesite, según la frase escrita.
+- La frase encriptada o desencriptada aparecerá como un parrafo en el contenedor negro.
+- Por ultimo, si desea escribir otra frase solo debe hacer click al boton con imagen ('#') y todo se reiniciará.
+
 ## Flujo de trabajo:
 
 - Primero creamos la estructura HTML, en forma anidada.
@@ -17,7 +23,7 @@
 - Comentar el código.
 - Subimos avances a github.
 - Terminar de dar estilo con CSS.
-- Empezamos a trabajar en JS utilizando Jquery, para dar interacción a la página.
+- Empezamos a trabajar en JS utilizando Jquery Y ES6, para dar interacción a la página.
 - Comentar el código.
 - Subimos avances a github.
 - Cumplimos con el objetivo.
@@ -27,19 +33,24 @@
 
 ## Herramientas Utilizadas:
 
-- Html, para la estructura del contenido.
-- Css, para darle estilo al contenido.
-- Bootstrap
-- Jquery/ JS
+- Html5, para la estructura del contenido.
+- Css3, para darle estilo al contenido.
+- Bootstrap3
+- Jquery/ ES6
 
 ## Fuente consultada:
 
-- [Laboratoria LMS] : https://lms.laboratoria.la/cohorts/lim-2017-09-bc-core-pm/courses/social-network/02-jquery/01-jQuery
+- [Laboratoria LMS] : https://lms.laboratoria.la/cohorts/lim-2018-01-bc-js-front-end-developer/courses/deep-dive/03-foundations
 
 - [Bootstrap] : https://getbootstrap.com/docs/3.3/css/#forms
 
+- [Curso de JavaScript ES6] : https://www.youtube.com/watch?v=3-xYkyKfmds&list=PLIddmSRJEJ0tYYrHQAAeTAmXzj36jxXoF&index=11
 
+## Imagenes:
 
+- Vista Principal
+
+![Caesar cipher](assets/images/caesar-cipher.png)
 
 
 
